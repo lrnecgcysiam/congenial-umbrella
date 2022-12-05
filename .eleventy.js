@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
 
   // Image plugins
   eleventyConfig.addPlugin(pluginImage);
-	eleventyConfig.addPlugin(pluginImageAvatar);
+	// eleventyConfig.addPlugin(pluginImageAvatar);
 
 
   // https://www.11ty.dev/docs/data-deep-merge/

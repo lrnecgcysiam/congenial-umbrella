@@ -19,5 +19,3 @@ create their own pages so they can also share there webpages.
 The web page is also capable of sharing a image with the link when you program the page. I like that cause it personalizes your content with a brand name.
 You can find out more about that at this link here [LINK](https://www.semrush.com/blog/open-graph/)
 
-
-{% img "IMG_1455.jpg" "Sitting on top of stone" "300px" %}

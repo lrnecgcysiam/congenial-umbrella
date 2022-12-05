@@ -6,11 +6,22 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+
+const pluginImage = require("./_11ty/imagePlugin.js");
+const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
+
+
+
 module.exports = function(eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+
+  // Image plugins
+  eleventyConfig.addPlugin(pluginImage);
+	eleventyConfig.addPlugin(pluginImageAvatar);
+
 
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
